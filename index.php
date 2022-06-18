@@ -29,7 +29,7 @@ include "hlavicka.php"
         Tato stránka slouží pouze pro výuku. Berte to prosím s rezervou.
         <br>
         Zdrojový kód stránky:
-        <a href="#"> ZDE</a>
+        <a href="https://github.com/vito104/rocnikovka"> ZDE</a>
         </div>
         <!-- jirkova fokta -->
         <div class="fotka">
