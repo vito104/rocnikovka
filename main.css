@@ -1,0 +1,129 @@
+/* Celé tělo stránky */
+
+body {
+    background-color: antiquewhite;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto max-content auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "hlavicka hlavicka hlavicka" "col1 col1 col1" "fotka video fotka2";
+}
+
+
+/* Darkmode tělo */
+
+.darkmodebody {
+    background-color: rgb(43, 42, 42);
+    color: white;
+}
+
+
+/* hlavička */
+
+header {
+    grid-area: hlavicka;
+}
+
+
+/* navigrační menu */
+
+nav {
+    grid-area: hlavicka;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul li a {
+    font-size: small;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 16px 30px;
+    font-size: 90%;
+}
+
+
+/* Navigační menu - flex */
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* po najetí na tlačítko */
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* Hlavní část */
+
+
+/* O stránce - grid */
+
+.s1 {
+    grid-area: col1;
+    font-size: large;
+    text-align: center;
+    margin: 12px;
+}
+
+
+/* Jirkova fotka - grid */
+
+.fotka {
+    grid-area: fotka;
+    text-align: center;
+}
+
+
+/* Video 2 - grid */
+
+.video {
+    grid-area: video;
+    text-align: center;
+}
+
+
+/* Fotka 2 - grid */
+
+.fotka2 {
+    grid-area: fotka2;
+    text-align: center;
+}
+
+
+/* Responsivní FlexBox na navigační menu */
+
+@media (max-width: 560) {
+    .flex-box {
+        flex-direction: column;
+    }
+}
+
+
+/* Responsivní grid */
+
+@media (max-width: 970) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "hlavicka" "col1" "fotka" "video" "fotka2";
+    }
+    .s1 {
+        font-size: medium;
+    }
+}
