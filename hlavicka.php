@@ -1,4 +1,5 @@
-        <nav>
+<!DOCTYPE html> 
+		<nav>
             <ul class="flex-box">
                 <li>
                     <a href="index.php">Hlavní Stránka</a>
