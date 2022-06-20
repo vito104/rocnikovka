@@ -11,6 +11,11 @@ body {
     grid-template-areas: "hlavicka hlavicka hlavicka" "col1 col2 col3" "ramecek ramecek ramecek";
 }
 
+img {
+    width: max-content;
+    height: max-content;
+}
+
 
 /* Darkmode tělo */
 
@@ -70,6 +75,9 @@ a:hover {
 
 /* Hlavní část */
 
+
+/* Formulář */
+
 .form {
     margin-top: 5px;
     width: 320px;
@@ -77,7 +85,11 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: auto;
 }
+
+
+/* Návod */
 
 .s2 {
     text-align: center;
@@ -85,13 +97,18 @@ a:hover {
     font-family: "Comic Sans MS", "Comic Sans";
 }
 
+
+/* Varování */
+
 .s3 {
     margin-top: 12px;
     margin-right: 12px;
     text-align: center;
     border-style: dashed;
-    border-color: black rgb(255, 174, 0);
 }
+
+
+/* Dolní info */
 
 .ramecek {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -100,4 +117,21 @@ a:hover {
     margin: 12px;
     border: dashed;
     grid-area: ramecek;
+}
+
+
+/* Grid a menu */
+
+
+/* Breakpoint vybrán z důvodu překrývání */
+
+@media(max-width: 900px) {
+    body {
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "hlavicka" "col1" "col2" "col3" "ramecek";
+    }
+    .flex-box {
+        flex-direction: column;
+    }
 }

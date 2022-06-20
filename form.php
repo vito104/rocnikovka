@@ -35,7 +35,7 @@
     </form>
     <script>
         function submitClick() {
-            let really = confirm("Známka bude uzavřena, email bude odeslán. Pokračovat?");
+            let really = confirm("Známka bude uzavřena, email bude odeslán. Pokračovat? Odvolat?");
             if (really) document.querySelector('#form').submit();
         }
     </script>
@@ -44,23 +44,29 @@
         <p>
             Vyplňte prosím všechny údaje.
             <br>
-            V případě nevyplnění některých z údajú,
+            Email se odesílá zhruba 5 minut.
             <br>
-            budete vyzvání k opravě.
+            Hosting je velmi kvalitní.
         </p>
     </div>
     <div class="s3">
-        <h1>Varování</h1>
+        <h1>Varování!</h1>
         <br>
         Po zadání všech údajů bude odeslán email!
     </div>
     <div class="ramecek">
         Vyplntě prosím jméno a příjmení žáka, předmět ze kterého je hodnocen a téma, ze kterého je hodnocen. 
         <br>
+        Ve výběru známky jsou povoleny pouze známky od 1-5.
+        <br>
+        Ke slovnímu hodnocení lze napsat i krátký komentář.
+        <br>
         Poté na vás vyskočí tabulka jestli jste všechny vyplnili správně.
         <br>
-        Pokud ne, je poslední šance tento email odvolat. Pokud vše sedí, bude email odeslán na email přes protokol SMTP (Simple mail transfer protocol) na portu 25 (nešifrovaný).
+        Pokud ne, je poslední šance tento email odvolat. 
         <br>
+         vše sedí, bude email odeslán na email přes protokol SMTP (Simple mail transfer protocol) na portu 25 (nešifrovaný).
+         <br>
         <img src="https://i.ytimg.com/vi/wrW7Vu7NjZc/mqdefault.jpg">
     </div>
 </body>

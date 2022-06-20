@@ -11,7 +11,7 @@
                     <a href="galerie.php">Galerie</a>
                 </li>
                 <li>
-                    <a>Zpětná vazba</a>
+                    <a href="form.php">Zpětná vazba</a>
                 </li>
                 <li><a onclick="darkmode()">Dark Mode</a></li>
             </ul>

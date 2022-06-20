@@ -5,10 +5,6 @@ body {
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
     margin: 0px;
-    display: grid;
-    grid-template-rows: auto max-content auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "hlavicka hlavicka hlavicka" "galerie galerie galerie";
 }
 
 
@@ -67,13 +63,20 @@ a:hover {
     flex-direction: row;
 }
 
+@media(max-width: 750px) {
+    .flex-box {
+        flex-direction: column;
+    }
+}
+
 
 /* Flex box - galeire */
 
 .galerie {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
@@ -87,30 +90,8 @@ img {
 .galerka {
     padding: 12px;
     align-items: center;
-}
+    margin: auto;
 
-
-/* Responsivní grid, navigační menu a galerie*/
-
-
-/* Breakpoint vybrán z důvodu, aby se obrázky  nezakrýval kraj*/
-
-@media(max-width: 1620px) {
-    body {
-        grid-template-rows: auto max-content;
-        grid-template-columns: 1fr;
-        grid-template-areas: "hlavicka" "galerie";
-        text-align: center;
-        align-items: center;
-    }
-    .flex-box {
-        flex-direction: column;
-    }
-    .galerie {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
 }
 
 
