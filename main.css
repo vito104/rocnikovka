@@ -6,7 +6,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     margin: 0px;
     display: grid;
-    grid-template-rows: auto max-content auto;
+    grid-template-rows: auto max-content auto auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "hlavicka hlavicka hlavicka" "col1 col1 col1" "fotka video fotka2";
 }
@@ -107,7 +107,7 @@ a:hover {
 
 /* Responsivní FlexBox na navigační menu */
 
-@media (max-width: 560) {
+@media (max-width: 560px) {
     .flex-box {
         flex-direction: column;
     }
@@ -116,7 +116,7 @@ a:hover {
 
 /* Responsivní grid */
 
-@media (max-width: 970) {
+@media (max-width: 970px) {
     body {
         display: grid;
         grid-template-columns: 1fr;

@@ -23,7 +23,7 @@
 
     $to      = 'r201@email.cz';
     $subjectemail = 'Hodnocení žáka/studenta';
-    $message = "$firstname $surname dostals z předmětu $subject z učiva $curriculum znamku $grade ($grade_voc)";
+    $message = "$firstname $surname dostal z předmětu $subject z učiva $curriculum znamku $grade ($grade_voc)";
     $headers = 'From: noreply@ruzicka-markojugend.ga'       . "\r\n" .
                  'Reply-To: ruzickaairsoft@gmailcom' . "\r\n" .
                  'X-Mailer: PHP/' . phpversion();
