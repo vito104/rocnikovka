@@ -7,6 +7,7 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="shortcut icon" href="images/fc_ban__k_ostrava_logo_1bR_icon.ico">
     <script src="main.js"></script>
 </head>
 
